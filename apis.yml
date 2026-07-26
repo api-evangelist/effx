@@ -1,21 +1,57 @@
 aid: effx
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/effx.png
 name: effx
-description: 'effx is a company surfaced as a portfolio company of cowboy-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: developer-tools. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  effx was a San Francisco developer-tools startup, founded in 2018 by Joey Parsons, that built a
+  modern microservice catalog to help engineering teams navigate and operate microservices
+  architectures — tracking service ownership, cataloging services, enforcing service standards,
+  tracking migrations, and supporting incident response. The company raised a $3.9M seed round led by
+  Kleiner Perkins alongside Cowboy Ventures. effx was acquired by Figma in 2021; the product was shut
+  down and the team joined Figma's engineering organization. effx.com is now an acquisition/farewell
+  notice and there is no live API, developer documentation, SDK, or public source surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/effx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - cowboy-ventures
+- kleiner-perkins
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-defunct: true
+x-founded: '2018'
+x-founder: Joey Parsons
+x-headquarters: San Francisco, CA, USA
+x-acquired-by: figma
+x-acquired-year: '2021'
+x-funding: Seed $3.9M (Kleiner Perkins led, with Cowboy Ventures)
+x-enrichment-note: >-
+  Verified 2026-07-19 via effx.com (acquisition notice) and web search. No live API, docs, SDK,
+  GitHub org, well-known, npm, or MCP surface exists post-shutdown. Probes: docs.effx.com/api.effx.com
+  do not resolve; app.effx.com and effx.com/help/ 404 or redirect to the farewell page;
+  /.well-known/security.txt and /.well-known/openid-configuration return 404; no first-party GitHub org.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Developer Tools
+- Microservices
+- Service Catalog
+- Developer Productivity
+- Incident Response
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +61,10 @@ maintainers:
 common:
 - type: Website
   url: https://www.effx.com
+- type: Blog
+  url: https://medium.com/effx
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
