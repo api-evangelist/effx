@@ -41,7 +41,7 @@ x-enrichment-note: >-
   GitHub org, well-known, npm, or MCP surface exists post-shutdown. Probes: docs.effx.com/api.effx.com
   do not resolve; app.effx.com and effx.com/help/ 404 or redirect to the farewell page;
   /.well-known/security.txt and /.well-known/openid-configuration return 404; no first-party GitHub org.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
